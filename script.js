@@ -6,3 +6,15 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 Prima di partire a scrivere codice poniamoci qualche domanda:
 Come faccio a sapere se un numero è divisibile per?
 Abbiamo visto qualcosa di particolare che possiamo usare?*/
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz"); // Multipli sia di 3 che di 5
+    } else if (i % 3 === 0) {
+        console.log("Fizz"); // Multipli di 3
+    } else if (i % 5 === 0) {
+        console.log("Buzz"); // Multipli di 5
+    } else {
+        console.log(i); // Altri numeri
+    }
+}
